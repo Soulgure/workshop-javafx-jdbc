@@ -28,7 +28,7 @@ public class MainViewController implements Initializable {
 	
 	@FXML
 	private MenuItem menuItemAbout;
-
+	
 	@FXML
 	public void onMenuItemSellerAction() {
 		System.out.println("onMenuItemSellerAction");
@@ -47,9 +47,11 @@ public class MainViewController implements Initializable {
 		loadView("/gui/About.fxml", x -> {});
 	}
 	
+	
 	@Override
 	public void initialize(URL uri, ResourceBundle rb) {
 	}
+	
 	
 	private synchronized <T> void loadView(String absoluteName, Consumer<T> initializingAction) {
 		try {
